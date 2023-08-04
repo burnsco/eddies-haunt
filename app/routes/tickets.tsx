@@ -1,12 +1,8 @@
 import type { V2_MetaFunction } from "@remix-run/node";
-import { Link } from "@remix-run/react";
-
-import { useOptionalUser } from "~/utils";
 
 export const meta: V2_MetaFunction = () => [{ title: "Eddies Haunt" }];
 
 export default function Index() {
-  const user = useOptionalUser();
   return (
     <main>
       <div className="relative min-h-screen bg-black sm:flex sm:items-center sm:justify-center">
@@ -27,35 +23,6 @@ export default function Index() {
                     Tickets
                   </span>
                 </h1>
-                <p className="mx-auto mt-6 max-w-lg text-center text-xl text-white sm:max-w-3xl">
-                  Fan site where you can find the latest concert information,
-                  photos and discussions about the best metal band of all time!
-                </p>
-                <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
-                  {user ? (
-                    <Link
-                      to="/notes"
-                      className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-yellow-700 shadow-sm hover:bg-yellow-50 sm:px-8"
-                    >
-                      View Notes for {user.email}
-                    </Link>
-                  ) : (
-                    <div className="space-y-4 shadow-md sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
-                      <Link
-                        to="/join"
-                        className="shadow-lg shadow-indigo-500/40 flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-yellow-700 hover:bg-yellow-50 sm:px-8"
-                      >
-                        Sign up
-                      </Link>
-                      <Link
-                        to="/login"
-                        className="flex items-center justify-center rounded-md bg-cyan-500 shadow-lg shadow-cyan-500/50"
-                      >
-                        Log In
-                      </Link>
-                    </div>
-                  )}
-                </div>
               </div>
             </div>
           </div>

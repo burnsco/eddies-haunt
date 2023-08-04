@@ -20,6 +20,7 @@ export default function Index() {
                   src="https://lastfm.freetls.fastly.net/i/u/ar0/39277c12fe2c2f24a5f005aa16263d96.jpg"
                   alt="Old Iron Maiden lineup"
                 />
+
                 <div className="absolute inset-0 bg-[color:rgba(254,204,27,0.5)] mix-blend-multiply" />
               </div>
               <div className="relative px-4 pb-8 pt-16 sm:px-6 sm:pb-14 sm:pt-24 lg:px-8 lg:pb-20 lg:pt-32">

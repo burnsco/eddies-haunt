@@ -30,23 +30,27 @@ const NavHeader = () => {
       <nav
         className="sticky
           flex w-full top-0 z-10
-          items-center bg-gradient-to-r
+          mx-auto  max-w-7xl items-center justify-between p-3 lg:px-4
+          bg-gradient-to-r
         from-indigo-500 from-10%
         via-sky-500 via-30%
         to-emerald-500 to-90%"
       >
-        <div className="flex items-center p-2">
-          <img height="250" width="250" src={Logo} alt="Site Logo" />
-        </div>
+        <Link to="/">
+          <div className="flex items-center p-2">
+            <img height="250" width="250" src={Logo} alt="Site Logo" />
+          </div>
+        </Link>
         <div
           className="flex
             justify-end
             antialiased
-            font-medium
+            font-bold
             hover:subpixel-antialiased
             items-center w-full
             p-2
-          text-gray-800
+          text-slate-50
+          leading-6
             h-full border-2
             gap-6"
         >
