@@ -16,7 +16,7 @@ export default function Index() {
               <img
                 className="h-full w-full object-cover"
                 src="https://lastfm.freetls.fastly.net/i/u/ar0/39277c12fe2c2f24a5f005aa16263d96.jpg"
-                alt="Sonic Youth On Stage"
+                alt="Old Iron Maiden lineup"
               />
               <div className="absolute inset-0 bg-[color:rgba(254,204,27,0.5)] mix-blend-multiply" />
             </div>
