@@ -12,12 +12,21 @@ export default function Index() {
   return (
     <main>
       <header>
-        <nav className="sticky flex flew-row w-full top-0 z-10 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
+        <nav
+          className="sticky
+                flex w-full top-0 z-10
+                items-center bg-gradient-to-r
+              from-indigo-500 from-10%
+              via-sky-500 via-30%
+              to-emerald-500 to-90%"
+        >
           <div className="flex items-center p-2">
-            <img height="150" width="150" src={Logo} alt="Site Logo" />
+            <img height="250" width="250" src={Logo} alt="Site Logo" />
           </div>
           <div className="flex antialiased font-medium hover:subpixel-antialiased items-center w-full justify-end p-2 h-full border-2 gap-6">
-            <Link to="Albums">Home</Link>
+            <div className="transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-105">
+              <Link to="Albums">Home</Link>
+            </div>
             <Link to="Albums">Lineup</Link>
             <Link to="Albums">Tickets</Link>
             <Link to="Albums">Albums</Link>
