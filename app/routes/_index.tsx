@@ -16,7 +16,7 @@ export default function Index() {
           <div className="flex items-center p-2">
             <img height="150" width="150" src={Logo} alt="Site Logo" />
           </div>
-          <div className="flex antialiased hover:subpixel-antialiased items-center w-full justify-end p-2 h-full border-2 gap-4 hover:gap-6">
+          <div className="flex antialiased font-medium hover:subpixel-antialiased items-center w-full justify-end p-2 h-full border-2 gap-6">
             <Link to="Albums">Home</Link>
             <Link to="Albums">Lineup</Link>
             <Link to="Albums">Tickets</Link>
@@ -58,16 +58,16 @@ export default function Index() {
                       View Notes for {user.email}
                     </Link>
                   ) : (
-                    <div className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
+                    <div className="space-y-4 shadow-md sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
                       <Link
                         to="/join"
-                        className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-yellow-700 shadow-sm hover:bg-yellow-50 sm:px-8"
+                        className="shadow-lg shadow-indigo-500/40 flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-yellow-700 hover:bg-yellow-50 sm:px-8"
                       >
                         Sign up
                       </Link>
                       <Link
                         to="/login"
-                        className="flex items-center justify-center rounded-md bg-yellow-500 px-4 py-3 font-medium text-white hover:bg-yellow-600"
+                        className="flex items-center justify-center rounded-md bg-cyan-500 shadow-lg shadow-cyan-500/50"
                       >
                         Log In
                       </Link>
