@@ -24,6 +24,7 @@ export const loader = async ({ request }: LoaderArgs) => {
   return json({ user: await getUser(request) });
 };
 
+
 const NavHeader = () => {
   return (
     <header>
