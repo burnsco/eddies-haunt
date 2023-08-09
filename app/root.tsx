@@ -24,14 +24,50 @@ export const loader = async ({ request }: LoaderArgs) => {
   return json({ user: await getUser(request) });
 };
 
-function NavItem({ to, children }: { to: string; children: React.ReactNode }) {
+function NavItem({
+  to,
+  children,
+  subMenu
+}: {
+  to: string;
+  children: React.ReactNode;
+  subMenu?: boolean;
+}) {
   return (
     <NavLink
       to={to}
       prefetch="intent"
       className={({ isActive }) =>
-        `my-1 py-1 px-2 pr-16 text-[length:14px] ${
-          isActive ? "rounded-md bg-gray-100" : ""
+        `${
+          isActive
+            ? " text-gray-800 "
+            : "hover:-translate-y-1 hover:scale-110 transition ease-in-out delay-110"
+        }`
+      }
+    >
+      {children}
+    </NavLink>
+  );
+}
+
+function NavItemSubMenuItem({
+  to,
+  children,
+  subMenu
+}: {
+  to: string;
+  children: React.ReactNode;
+  subMenu?: boolean;
+}) {
+  return (
+    <NavLink
+      to={to}
+      prefetch="intent"
+      className={({ isActive }) =>
+        `${
+          isActive
+            ? " text-yellow-500 "
+            : "hover:-translate-y-1 hover:scale-110 transition ease-in-out delay-100"
         }`
       }
     >
