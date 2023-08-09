@@ -24,7 +24,6 @@ export const loader = async ({ request }: LoaderArgs) => {
   return json({ user: await getUser(request) });
 };
 
-
 const NavHeader = () => {
   return (
     <header>
@@ -33,9 +32,9 @@ const NavHeader = () => {
           flex w-full top-0 z-10
           mx-auto  max-w-7xl items-center justify-between p-3 lg:px-4
           bg-gradient-to-r
-        from-indigo-500 from-10%
-        via-sky-500 via-30%
-        to-emerald-500 to-90%"
+         from-indigo-500 from-10%
+         via-sky-500 via-30%
+         to-emerald-500 to-90%"
       >
         <Link to="/">
           <div className="flex items-center p-2">
