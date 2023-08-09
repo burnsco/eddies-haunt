@@ -4,88 +4,105 @@ export const meta: V2_MetaFunction = () => [{ title: "Eddies Haunt" }];
 
 export default function DiscussPage() {
   return (
-    <main>
-      <div className="relative min-h-screen bg-black sm:flex sm:items-center sm:justify-center">
-        <div className="relative sm:pb-16 sm:pt-8">
-          <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
-            <div className="relative shadow-xl sm:overflow-hidden sm:rounded-2xl">
-              <div className="absolute inset-0">
-                <img
-                  className="h-full w-full object-cover"
-                  src="https://lastfm.freetls.fastly.net/i/u/ar0/39277c12fe2c2f24a5f005aa16263d96.jpg"
-                  alt="Old Iron Maiden lineup"
-                />
-                <div className="absolute inset-0 bg-[color:rgba(254,204,27,0.5)] mix-blend-multiply" />
+    <div className="relative overflow-hidden bg-white">
+      <div className="pb-80 pt-16 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40">
+        <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
+          <div className="sm:max-w-lg">
+            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+              Summer styles are finally here
+            </h1>
+            <p className="mt-4 text-xl text-gray-500">
+              This year, our new summer collection will shelter you from the
+              harsh elements of a world that doesn't care if you live or die.
+            </p>
+          </div>
+          <div>
+            <div className="mt-10">
+              {/* Decorative image grid */}
+              <div
+                aria-hidden="true"
+                className="pointer-events-none
+                lg:absolute
+                lg:inset-y-0
+                lg:mx-auto
+                lg:w-full lg:max-w-7xl"
+              >
+                <div
+                  className="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8
+                lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8"
+                >
+                  <div className="flex items-center space-x-6 lg:space-x-8">
+                    <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                      <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
+                        <img
+                          src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg"
+                          alt=""
+                          className="h-full w-full object-cover object-center"
+                        />
+                      </div>
+                      <div className="h-64 w-44 overflow-hidden rounded-lg">
+                        <img
+                          src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-02.jpg"
+                          alt=""
+                          className="h-full w-full object-cover object-center"
+                        />
+                      </div>
+                    </div>
+                    <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                      <div className="h-64 w-44 overflow-hidden rounded-lg">
+                        <img
+                          src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-03.jpg"
+                          alt=""
+                          className="h-full w-full object-cover object-center"
+                        />
+                      </div>
+                      <div className="h-64 w-44 overflow-hidden rounded-lg">
+                        <img
+                          src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-04.jpg"
+                          alt=""
+                          className="h-full w-full object-cover object-center"
+                        />
+                      </div>
+                      <div className="h-64 w-44 overflow-hidden rounded-lg">
+                        <img
+                          src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-05.jpg"
+                          alt=""
+                          className="h-full w-full object-cover object-center"
+                        />
+                      </div>
+                    </div>
+                    <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                      <div className="h-64 w-44 overflow-hidden rounded-lg">
+                        <img
+                          src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-06.jpg"
+                          alt=""
+                          className="h-full w-full object-cover object-center"
+                        />
+                      </div>
+                      <div className="h-64 w-44 overflow-hidden rounded-lg">
+                        <img
+                          src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-07.jpg"
+                          alt=""
+                          className="h-full w-full object-cover object-center"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="relative px-4 pb-8 pt-16 sm:px-6 sm:pb-14 sm:pt-24 lg:px-8 lg:pb-20 lg:pt-32">
-                <h1 className="text-center text-6xl font-extrabold tracking-tight sm:text-8xl lg:text-9xl">
-                  <span className="block uppercase text-yellow-500 drop-shadow-md">
-                    Discuss
-                  </span>
-                </h1>
-              </div>
+
+              <a
+                href="/"
+                className="inline-block rounded-md border border-transparent
+                 bg-indigo-600 px-8 py-3 text-center font-medium text-white
+                  hover:bg-indigo-700"
+              >
+                Shop Collection
+              </a>
             </div>
           </div>
         </div>
       </div>
-      <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
-        <div className="-m-1 flex flex-wrap md:-m-2">
-          <div className="flex w-1/3 flex-wrap">
-            <div className="w-full p-1 md:p-2">
-              <img
-                alt="gallery"
-                className="block h-full w-full rounded-lg object-cover object-center"
-                src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-              />
-            </div>
-          </div>
-          <div className="flex w-1/3 flex-wrap">
-            <div className="w-full p-1 md:p-2">
-              <img
-                alt="gallery"
-                className="block h-full w-full rounded-lg object-cover object-center"
-                src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp"
-              />
-            </div>
-          </div>
-          <div className="flex w-1/3 flex-wrap">
-            <div className="w-full p-1 md:p-2">
-              <img
-                alt="gallery"
-                className="block h-full w-full rounded-lg object-cover object-center"
-                src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp"
-              />
-            </div>
-          </div>
-          <div className="flex w-1/3 flex-wrap">
-            <div className="w-full p-1 md:p-2">
-              <img
-                alt="gallery"
-                className="block h-full w-full rounded-lg object-cover object-center"
-                src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp"
-              />
-            </div>
-          </div>
-          <div className="flex w-1/3 flex-wrap">
-            <div className="w-full p-1 md:p-2">
-              <img
-                alt="gallery"
-                className="block h-full w-full rounded-lg object-cover object-center"
-                src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(76).webp"
-              />
-            </div>
-          </div>
-          <div className="flex w-1/3 flex-wrap">
-            <div className="w-full p-1 md:p-2">
-              <img
-                alt="gallery"
-                className="block h-full w-full rounded-lg object-cover object-center"
-                src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
+    </div>
   );
 }
