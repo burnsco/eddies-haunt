@@ -2,10 +2,10 @@ import { cssBundleHref } from "@remix-run/css-bundle";
 import type { LinksFunction, LoaderArgs } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import {
-  Link,
   Links,
   LiveReload,
   Meta,
+  NavLink,
   Outlet,
   Scripts,
   ScrollRestoration
@@ -24,6 +24,22 @@ export const loader = async ({ request }: LoaderArgs) => {
   return json({ user: await getUser(request) });
 };
 
+function NavItem({ to, children }: { to: string; children: React.ReactNode }) {
+  return (
+    <NavLink
+      to={to}
+      prefetch="intent"
+      className={({ isActive }) =>
+        `my-1 py-1 px-2 pr-16 text-[length:14px] ${
+          isActive ? "rounded-md bg-gray-100" : ""
+        }`
+      }
+    >
+      {children}
+    </NavLink>
+  );
+}
+
 const NavHeader = () => {
   return (
     <header>
@@ -36,11 +52,11 @@ const NavHeader = () => {
          via-sky-500 via-30%
          to-emerald-500 to-90%"
       >
-        <Link to="/">
+        <NavLink to="/">
           <div className="flex items-center p-2">
             <img height="250" width="250" src={Logo} alt="Site Logo" />
           </div>
-        </Link>
+        </NavLink>
         <div
           className="flex
             justify-end
@@ -54,11 +70,11 @@ const NavHeader = () => {
             h-full border-2
             gap-6"
         >
-          <Link to="/">Home</Link>
-          <Link to="lineup">Lineup</Link>
-          <Link to="albums">Albums</Link>
-          <Link to="tickets">Tickets</Link>
-          <Link to="discuss">Discuss</Link>
+          <NavItem to="/">Home</NavItem>
+          <NavItem to="lineup">Lineup</NavItem>
+          <NavItem to="albums">Albums</NavItem>
+          <NavItem to="tickets">Tickets</NavItem>
+          <NavItem to="discuss">Discuss</NavItem>
         </div>
       </nav>
     </header>

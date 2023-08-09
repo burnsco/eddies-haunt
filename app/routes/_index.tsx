@@ -37,7 +37,8 @@ export default function Index() {
                   {user ? (
                     <Link
                       to="/notes"
-                      className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-yellow-700 shadow-sm hover:bg-yellow-50 sm:px-8"
+                      className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium
+                       text-yellow-700 shadow-sm hover:bg-yellow-50 sm:px-8"
                     >
                       View Notes for {user.email}
                     </Link>
@@ -45,7 +46,10 @@ export default function Index() {
                     <div className="space-y-4 shadow-md sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
                       <Link
                         to="/join"
-                        className="shadow-lg shadow-indigo-500/40 flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-yellow-700 hover:bg-yellow-50 sm:px-8"
+                        className="shadow-lg shadow-indigo-500/40 flex items-center
+                        justify-center rounded-md border border-transparent bg-white
+                        px-4 py-3 text-base font-medium text-yellow-700 hover:bg-yellow-50
+                         sm:px-8"
                       >
                         Sign up
                       </Link>
