@@ -50,39 +50,13 @@ function NavItem({
   );
 }
 
-function NavItemSubMenuItem({
-  to,
-  children,
-  subMenu
-}: {
-  to: string;
-  children: React.ReactNode;
-  subMenu?: boolean;
-}) {
-  return (
-    <NavLink
-      to={to}
-      prefetch="intent"
-      className={({ isActive }) =>
-        `${
-          isActive
-            ? " text-yellow-500 "
-            : "hover:-translate-y-1 hover:scale-110 transition ease-in-out delay-100"
-        }`
-      }
-    >
-      {children}
-    </NavLink>
-  );
-}
-
 const NavHeader = () => {
   return (
     <header>
       <nav
         className="sticky
           flex w-full top-0 z-10
-          mx-auto  max-w-7xl items-center justify-between p-3 lg:px-4
+          mx-auto max-w-7xl items-center justify-between p-3 lg:px-4
           bg-gradient-to-r
          from-indigo-500 from-10%
          via-sky-500 via-30%
