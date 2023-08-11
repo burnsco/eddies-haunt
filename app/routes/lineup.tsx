@@ -44,7 +44,7 @@ export default function Index() {
               <img
                 alt="gallery"
                 className="block h-full w-full rounded-lg object-cover object-center"
-                src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp"
+                src="https://res.cloudinary.com/dmztdsduf/image/upload/v1691765439/ironmaiden/lineup/Bruce-Vocalist.jpg"
               />
             </div>
           </div>
@@ -53,7 +53,7 @@ export default function Index() {
               <img
                 alt="gallery"
                 className="block h-full w-full rounded-lg object-cover object-center"
-                src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp"
+                src="https://res.cloudinary.com/dmztdsduf/image/upload/v1691765438/ironmaiden/lineup/DaveMurray-Guitar.jpg"
               />
             </div>
           </div>
@@ -62,7 +62,7 @@ export default function Index() {
               <img
                 alt="gallery"
                 className="block h-full w-full rounded-lg object-cover object-center"
-                src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp"
+                src="https://res.cloudinary.com/dmztdsduf/image/upload/v1691765438/ironmaiden/lineup/NickoMcbrain-Drums.jpg"
               />
             </div>
           </div>
@@ -71,7 +71,7 @@ export default function Index() {
               <img
                 alt="gallery"
                 className="block h-full w-full rounded-lg object-cover object-center"
-                src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(76).webp"
+                src="https://res.cloudinary.com/dmztdsduf/image/upload/v1691766374/ironmaiden/lineup/JanickGers-Guitar.jpg"
               />
             </div>
           </div>
@@ -80,7 +80,7 @@ export default function Index() {
               <img
                 alt="gallery"
                 className="block h-full w-full rounded-lg object-cover object-center"
-                src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp"
+                src="https://res.cloudinary.com/dmztdsduf/image/upload/v1691765438/ironmaiden/lineup/AdrianSmith-Guitar.jpg"
               />
             </div>
           </div>
