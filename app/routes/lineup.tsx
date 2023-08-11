@@ -1,8 +1,22 @@
 import type { V2_MetaFunction } from "@remix-run/node";
 
-export const meta: V2_MetaFunction = () => [{ title: "Eddies Haunt" }];
+export const meta: V2_MetaFunction = () => [{ title: "Lineup" }];
 
-export default function Index() {
+function BandMemberItem({ imgSrc, alt }: { imgSrc: string; alt: string }) {
+  return (
+    <div className="flex w-1/3 flex-wrap">
+      <div className="w-full p-1 md:p-2">
+        <img
+          alt={alt}
+          className="block h-full w-full rounded-lg object-cover object-center"
+          src={imgSrc}
+        />
+      </div>
+    </div>
+  );
+}
+
+export default function LineupPage() {
   return (
     <main>
       <div className="relative min-h-screen bg-black sm:flex sm:items-center sm:justify-center">
@@ -13,7 +27,7 @@ export default function Index() {
                 <img
                   className="h-full w-full object-cover"
                   src="https://lastfm.freetls.fastly.net/i/u/ar0/39277c12fe2c2f24a5f005aa16263d96.jpg"
-                  alt="Old Iron Maiden lineup"
+                  alt="Iron Maiden lineup"
                 />
                 <div className="absolute inset-0 hover:backdrop-blur-lg bg-[color:rgba(254,204,27,0.5)] mix-blend-multiply" />
               </div>
@@ -30,60 +44,34 @@ export default function Index() {
       </div>
       <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
         <div className="-m-1 flex flex-wrap md:-m-2">
-          <div className="flex w-1/3 flex-wrap">
-            <div className="w-full p-1 md:p-2">
-              <img
-                alt="gallery"
-                className="block h-full w-full rounded-lg object-cover object-center"
-                src="https://res.cloudinary.com/dmztdsduf/image/upload/v1691765439/ironmaiden/lineup/oldLeadSinger.png"
-              />
-            </div>
-          </div>
-          <div className="flex w-1/3 flex-wrap">
-            <div className="w-full p-1 md:p-2">
-              <img
-                alt="gallery"
-                className="block h-full w-full rounded-lg object-cover object-center"
-                src="https://res.cloudinary.com/dmztdsduf/image/upload/v1691765439/ironmaiden/lineup/Bruce-Vocalist.jpg"
-              />
-            </div>
-          </div>
-          <div className="flex w-1/3 flex-wrap">
-            <div className="w-full p-1 md:p-2">
-              <img
-                alt="gallery"
-                className="block h-full w-full rounded-lg object-cover object-center"
-                src="https://res.cloudinary.com/dmztdsduf/image/upload/v1691765438/ironmaiden/lineup/DaveMurray-Guitar.jpg"
-              />
-            </div>
-          </div>
-          <div className="flex w-1/3 flex-wrap">
-            <div className="w-full p-1 md:p-2">
-              <img
-                alt="gallery"
-                className="block h-full w-full rounded-lg object-cover object-center"
-                src="https://res.cloudinary.com/dmztdsduf/image/upload/v1691765438/ironmaiden/lineup/NickoMcbrain-Drums.jpg"
-              />
-            </div>
-          </div>
-          <div className="flex w-1/3 flex-wrap">
-            <div className="w-full p-1 md:p-2">
-              <img
-                alt="gallery"
-                className="block h-full w-full rounded-lg object-cover object-center"
-                src="https://res.cloudinary.com/dmztdsduf/image/upload/v1691766374/ironmaiden/lineup/JanickGers-Guitar.jpg"
-              />
-            </div>
-          </div>
-          <div className="flex w-1/3 flex-wrap">
-            <div className="w-full p-1 md:p-2">
-              <img
-                alt="gallery"
-                className="block h-full w-full rounded-lg object-cover object-center"
-                src="https://res.cloudinary.com/dmztdsduf/image/upload/v1691765438/ironmaiden/lineup/AdrianSmith-Guitar.jpg"
-              />
-            </div>
-          </div>
+          <BandMemberItem
+            alt="Original Lead Singer"
+            imgSrc="https://res.cloudinary.com/dmztdsduf/image/upload/v1691765439/ironmaiden/lineup/oldLeadSinger.png"
+          />
+          <BandMemberItem
+            alt="Bruce Dickinson - Lead Singer"
+            imgSrc="https://res.cloudinary.com/dmztdsduf/image/upload/v1691765439/ironmaiden/lineup/Bruce-Vocalist.jpg"
+          />
+
+          <BandMemberItem
+            alt="Dave Murray - Guitar One"
+            imgSrc="https://res.cloudinary.com/dmztdsduf/image/upload/v1691765438/ironmaiden/lineup/DaveMurray-Guitar.jpg"
+          />
+
+          <BandMemberItem
+            alt="Nicko McBrain - Drums"
+            imgSrc="https://res.cloudinary.com/dmztdsduf/image/upload/v1691765438/ironmaiden/lineup/NickoMcbrain-Drums.jpg"
+          />
+
+          <BandMemberItem
+            alt="Janick Gers - Guitar Two"
+            imgSrc="https://res.cloudinary.com/dmztdsduf/image/upload/v1691766374/ironmaiden/lineup/JanickGers-Guitar.jpg"
+          />
+
+          <BandMemberItem
+            alt="Adrian Smith - Guitar Three"
+            imgSrc="https://res.cloudinary.com/dmztdsduf/image/upload/v1691765438/ironmaiden/lineup/AdrianSmith-Guitar.jpg"
+          />
         </div>
       </div>
     </main>
