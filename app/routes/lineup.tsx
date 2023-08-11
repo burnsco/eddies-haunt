@@ -1,5 +1,4 @@
 import type { V2_MetaFunction } from "@remix-run/node";
-import PaulDianno from "app/assets/images/PaulDiAnno-OldVocalist.png";
 
 export const meta: V2_MetaFunction = () => [{ title: "Eddies Haunt" }];
 
@@ -36,7 +35,7 @@ export default function Index() {
               <img
                 alt="gallery"
                 className="block h-full w-full rounded-lg object-cover object-center"
-                src={PaulDianno}
+                src="https://res.cloudinary.com/dmztdsduf/image/upload/v1691765439/ironmaiden/lineup/c2dmogaaw5eswoyzuulf.png"
               />
             </div>
           </div>

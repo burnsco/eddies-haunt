@@ -35,7 +35,7 @@ export default function Albums() {
               <img
                 alt="gallery"
                 className="block h-full w-full rounded-lg object-cover object-center"
-                src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                src="https://res.cloudinary.com/dmztdsduf/image/upload/v1691765480/ironmaiden/albums/7-seventhsonofaseventhson.jpg"
               />
             </div>
           </div>
