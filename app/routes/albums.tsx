@@ -35,52 +35,61 @@ export default function Albums() {
               <img
                 alt="gallery"
                 className="block h-full w-full rounded-lg object-cover object-center"
+                src="https://res.cloudinary.com/dmztdsduf/image/upload/v1691765479/ironmaiden/albums/1-ironmaiden.jpg"
+              />
+            </div>
+          </div>
+          <div className="flex w-1/3 flex-wrap">
+            <div className="w-full p-1 md:p-2">
+              <img
+                alt="gallery"
+                className="block h-full w-full rounded-lg object-cover object-center"
+                src="https://res.cloudinary.com/dmztdsduf/image/upload/v1691765479/ironmaiden/albums/2-killers.jpg"
+              />
+            </div>
+          </div>
+          <div className="flex w-1/3 flex-wrap">
+            <div className="w-full p-1 md:p-2">
+              <img
+                alt="gallery"
+                className="block h-full w-full rounded-lg object-cover object-center"
+                src="https://res.cloudinary.com/dmztdsduf/image/upload/v1691765480/ironmaiden/albums/3-numberofthebeast.jpg"
+              />
+            </div>
+          </div>
+          <div className="flex w-1/3 flex-wrap">
+            <div className="w-full p-1 md:p-2">
+              <img
+                alt="gallery"
+                className="block h-full w-full rounded-lg object-cover object-center"
+                src="https://res.cloudinary.com/dmztdsduf/image/upload/v1691765480/ironmaiden/albums/4-pieceofmind.jpg"
+              />
+            </div>
+          </div>
+          <div className="flex w-1/3 flex-wrap">
+            <div className="w-full p-1 md:p-2">
+              <img
+                alt="gallery"
+                className="block h-full w-full rounded-lg object-cover object-center"
+                src="https://res.cloudinary.com/dmztdsduf/image/upload/v1691765480/ironmaiden/albums/5-powerslave.jpg"
+              />
+            </div>
+          </div>
+          <div className="flex w-1/3 flex-wrap">
+            <div className="w-full p-1 md:p-2">
+              <img
+                alt="gallery"
+                className="block h-full w-full rounded-lg object-cover object-center"
+                src="https://res.cloudinary.com/dmztdsduf/image/upload/v1691765480/ironmaiden/albums/6-somewhereintime.jpg"
+              />
+            </div>
+          </div>
+          <div className="flex w-1/3 flex-wrap">
+            <div className="w-full p-1 md:p-2">
+              <img
+                alt="gallery"
+                className="block h-full w-full rounded-lg object-cover object-center"
                 src="https://res.cloudinary.com/dmztdsduf/image/upload/v1691765480/ironmaiden/albums/7-seventhsonofaseventhson.jpg"
-              />
-            </div>
-          </div>
-          <div className="flex w-1/3 flex-wrap">
-            <div className="w-full p-1 md:p-2">
-              <img
-                alt="gallery"
-                className="block h-full w-full rounded-lg object-cover object-center"
-                src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp"
-              />
-            </div>
-          </div>
-          <div className="flex w-1/3 flex-wrap">
-            <div className="w-full p-1 md:p-2">
-              <img
-                alt="gallery"
-                className="block h-full w-full rounded-lg object-cover object-center"
-                src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp"
-              />
-            </div>
-          </div>
-          <div className="flex w-1/3 flex-wrap">
-            <div className="w-full p-1 md:p-2">
-              <img
-                alt="gallery"
-                className="block h-full w-full rounded-lg object-cover object-center"
-                src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp"
-              />
-            </div>
-          </div>
-          <div className="flex w-1/3 flex-wrap">
-            <div className="w-full p-1 md:p-2">
-              <img
-                alt="gallery"
-                className="block h-full w-full rounded-lg object-cover object-center"
-                src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(76).webp"
-              />
-            </div>
-          </div>
-          <div className="flex w-1/3 flex-wrap">
-            <div className="w-full p-1 md:p-2">
-              <img
-                alt="gallery"
-                className="block h-full w-full rounded-lg object-cover object-center"
-                src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp"
               />
             </div>
           </div>

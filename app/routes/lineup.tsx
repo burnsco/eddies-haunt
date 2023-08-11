@@ -35,7 +35,7 @@ export default function Index() {
               <img
                 alt="gallery"
                 className="block h-full w-full rounded-lg object-cover object-center"
-                src="https://res.cloudinary.com/dmztdsduf/image/upload/v1691765439/ironmaiden/lineup/c2dmogaaw5eswoyzuulf.png"
+                src="https://res.cloudinary.com/dmztdsduf/image/upload/v1691765439/ironmaiden/lineup/oldLeadSinger.png"
               />
             </div>
           </div>
