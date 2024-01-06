@@ -7,7 +7,7 @@ import {
   Meta,
   Outlet,
   Scripts,
-  ScrollRestoration
+  ScrollRestoration,
 } from "@remix-run/react";
 
 import { getUser } from "~/session.server";
@@ -16,7 +16,7 @@ import { NavHeader } from "./layout/navbar";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
-  ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : [])
+  ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
 ];
 
 export const loader = async ({ request }: LoaderArgs) => {
